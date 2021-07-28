@@ -1,9 +1,9 @@
-﻿using RogerioGelonezi.StuffExchange.Catalog.Entities.Abstractions;
+﻿using Catalog.Entities.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace RogerioGelonezi.StuffExchange.Catalog.Entities
+namespace Catalog.Entities
 {
     public class PropertyGroup : Entity
     {
@@ -14,5 +14,6 @@ namespace RogerioGelonezi.StuffExchange.Catalog.Entities
 
         public string Name { get; private set; }
         public int Position { get; private set; }
+        public bool Protected { get; private set; }
     }
 }

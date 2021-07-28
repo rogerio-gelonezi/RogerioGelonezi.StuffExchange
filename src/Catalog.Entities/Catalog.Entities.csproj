@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RogerioGelonezi.StuffExchange.Catalog.Entities.Abstractions\RogerioGelonezi.StuffExchange.Catalog.Entities.Abstractions.csproj" />
+    <ProjectReference Include="..\Catalog.Entities.Abstractions\Catalog.Entities.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

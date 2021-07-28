@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    container_name: sqlserver
+    environment:
+      SA_PASSWORD: "mySuper#ecr3t"
+      ACCEPT_EULA: "Y"
+    ports:
+      - 1433:1433
+
+  catalog.webapi:
+    image: ${DOCKER_REGISTRY-}catalogwebapi
+    container_name: catalog.webapi
+    build:
+      context: .
+      dockerfile: src/Catalog.WebApi/Dockerfile
+    depends_on:
+      - sqlserver

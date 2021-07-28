@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\RogerioGelonezi.StuffExchange.Catalog.Entities\RogerioGelonezi.StuffExchange.Catalog.Entities.csproj" />
+    <ProjectReference Include="..\..\src\Catalog.Entities\Catalog.Entities.csproj" />
   </ItemGroup>
 
 </Project>
